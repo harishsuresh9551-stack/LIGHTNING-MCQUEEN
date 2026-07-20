@@ -15,15 +15,12 @@ setup(
     zip_safe=True,
     maintainer='harish',
     maintainer_email='your_email@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    description='Waypoint loop package',
+    license='Apache-2.0',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'waypoint_loop = lightning_mcqueen.waypoint_loop:main',
         ],
     },
 )
